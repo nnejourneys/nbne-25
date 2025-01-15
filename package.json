@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "dev:content": "velite --watch",
-    "build:content": "velite --clean",
-    "dev:next": "next dev",
-    "build:next": "next build"
+    "build:content": "velite --clean"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
