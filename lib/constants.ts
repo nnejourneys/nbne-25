@@ -1,4 +1,4 @@
-export const BASE_PATH = 'nbne-25.vercel.app/'
+export const BASE_PATH = 'https://nbne-25.vercel.app/'
 export const SITE_TITLE = 'North by Northeast Journeys'
 export const SITE_DESC = 'We specialize in adventure, nature and culture tours across the little-known Northeast region of India. | North by Northeast Journeys.'
 export const SITE_KEYWORDS = [ "Northeast India", "Assam", "Arunachal Pradesh", "Meghalaya", "Nagaland", "Sikkim", "Active Holidays", "Leisure Holidays", "Family Holidays", "Cycling", "Trekking", "Rafting", "Culture Holidays"]
