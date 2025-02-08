@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "./navbar";
 import HamburgerMenu from "./hamburger-menu";
 import ContactBanner from "./contact-banner";
+import Link from "next/link";
 
 export default function Menu() {
   const [yValue, setYValue] = useState(0);
@@ -39,13 +40,15 @@ export default function Menu() {
         </div>
 
         <div className="flex justify-between py-1 px-1 md:px-3 lg:px-5 xl:px-10 gap-x-5 items-center">
-          <Image
-            src="/images/logo.svg"
-            alt="NXNE"
-            className="w-20 h-auto"
-            width="300"
-            height="205"
-          />
+          <Link href="/">
+            <Image
+              src="/images/logo.svg"
+              alt="NXNE"
+              className="w-20 h-auto"
+              width="300"
+              height="205"
+            />
+          </Link>
           <HamburgerMenu />
           <div className="hidden md:flex">
             <Navbar />
