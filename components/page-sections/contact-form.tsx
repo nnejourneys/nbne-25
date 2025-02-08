@@ -12,8 +12,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
-import { Textarea } from "@/components/ui/textarea"; 
+import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { Container } from "../styledcomps/container";
 
 const FORMSPARK_ACTION_URL = "https://submit-form.com/Ig0E1Azx";
 
@@ -43,7 +44,7 @@ export default function ContactForm() {
       message: "",
     },
   });
- 
+
   const onSubmit = async ({
     fname,
     email,
@@ -71,7 +72,7 @@ export default function ContactForm() {
   };
 
   return (
-    <>
+    <Container>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="md:space-y-8">
           <div className="grid md:grid-cols-2 gap-2">
@@ -152,6 +153,6 @@ export default function ContactForm() {
           <Button type="submit">Submit</Button>
         </form>
       </Form>
-    </>
+    </Container>
   );
 }
