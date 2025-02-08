@@ -2,6 +2,7 @@ import { defineConfig, defineCollection, s } from "velite";
 
 const computedFields = <T extends { slug: string }>(data: T) => ({
   ...data,
+    slug: `/tours/${data.slug.split("/").pop()}`,
   slugAsParams: data.slug.split("/").slice(1).join("/"),
 });
 
