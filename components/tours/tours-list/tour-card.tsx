@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import TourCardBody from "./tour-card-body";
 import TourCardImg from "./tour-card-img";
 import { Tours } from "@/.velite";
+import { BASE_PATH } from "@/lib/constants";
 // import { Tours } from "@/.contentlayer/generated";
 
 export default function TourCard(tour: Tours) {
@@ -37,7 +38,7 @@ export default function TourCard(tour: Tours) {
             body={tour.body}
           />
           <motion.div whileTap={{ scale: 0.99, opacity: 0.5 }}>
-            <Link href={`/${tour.slug}`}>
+            <Link href={`${BASE_PATH}${tour.slug}`}>
               <Button size="sm">Tour Details</Button>
             </Link>
           </motion.div>
