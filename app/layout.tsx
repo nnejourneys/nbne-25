@@ -30,7 +30,7 @@ const open_sans = Open_Sans({
 
 export const metadata = {
   icons: {
-    icon: "/images/favicon.png",
+    icon: "/images/logo.png",
   },
   title: `Home | ${SITE_TITLE}`,
   description: `${SITE_DESC}`,
