@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { Separator } from "@/components/ui/separator";
 import { Tours } from "@/.velite";
+import { BASE_PATH } from "@/lib/constants";
 
 export default function TourCardBody(tour: Tours) {
   const { slug, title, subtitle, touricon, days, cat } = tour;
@@ -10,7 +11,7 @@ export default function TourCardBody(tour: Tours) {
   return (
     <>
       <div className="mb-5">
-        <Link href={`/${slug}`}>
+        <Link href={`${BASE_PATH}${slug}`}>
           <p className="mb-1 font-bold group-hover:text-primary">{title}</p>
           <p className="text-sm leading-4 mb-5">{subtitle}</p>
           <div className="flex">
